@@ -1,4 +1,5 @@
 export async function criarCalibracao(calibracao) {
+    const sql = "insert into calibracoes values (equipamentoId, dataCalibracao, resultado, responsavel) = (?, ?, ?, ?)"
     
 }
 
