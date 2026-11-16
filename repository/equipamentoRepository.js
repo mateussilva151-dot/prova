@@ -1,5 +1,10 @@
+import conexao from "../config/conexao"
+import equipamento from "../model/Equipamento"
+
+
 export async function criarEquipamento(equipamento) {
-    const sql = "insert into equipamento values (codigoPatrimonio, nome, setor) = (?, ?, ?)"
+    const sql = "insert into equipamento values ?"
+    const [resultado] = await conexao.execute(sql,[codigoPatrimonio, nome, setor ])
 }
 
 export async function listarEquipamentos() {
